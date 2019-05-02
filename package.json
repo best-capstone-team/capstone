@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "react": "16.8.3",
-    "react-native": "0.59.3",
+    "react-native": "^0.59.6",
+    "react-native-timer-countdown": "^4.1.0",
     "react-viro": "2.14.0"
   },
   "devDependencies": {

@@ -20,9 +20,10 @@ import {
 import { ViroVRSceneNavigator, ViroARSceneNavigator } from 'react-viro';
 require('./secrets');
 
-/*
- TODO: Insert your API key below
- */
+import { whileStatement } from '@babel/types';
+
+import Timer from './js/Timer';
+
 var sharedProps = {
   apiKey: process.env.APIKEY,
 };
@@ -75,7 +76,7 @@ export default class ViroSample extends Component {
     return (
       <View style={localStyles.outer}>
         <View style={localStyles.inner}>
-          <Text style={localStyles.titleText}>Welcome! Hello World!</Text>
+          <Timer />
 
           <TouchableHighlight
             style={localStyles.buttons}
@@ -146,6 +147,7 @@ var localStyles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: 'black',
+    color: 'white',
   },
   inner: {
     flex: 1,

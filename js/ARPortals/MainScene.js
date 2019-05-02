@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
 import {
   ViroSceneNavigator,
@@ -12,6 +12,7 @@ import {
   Viro360Video,
   Viro360Image,
   ViroUtils,
+  ViroText,
   ViroPortal,
   ViroPortalScene,
   Viro3DObject,
