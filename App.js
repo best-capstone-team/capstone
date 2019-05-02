@@ -32,6 +32,11 @@ var sharedProps = {
 // var InitialARScene = require('./js/HelloWorldSceneAR');
 var InitialARScene = require('./js/ARPortals/MainScene.js');
 // var InitialVRScene = require('./js/HelloWorldScene');
+// var InitialARScene = require('./js/360PhotoTour/MainScene');
+
+// var vrScenes = {
+//   '360PhotoTour': require('./js/360PhotoTour/MainScene'),
+// };
 
 var UNSET = 'UNSET';
 var VR_NAVIGATOR_TYPE = 'VR';
@@ -85,8 +90,8 @@ export default class ViroSample extends Component {
           >
             <Text style={localStyles.buttonText}>Play</Text>
           </TouchableHighlight>
-          {/*
-          <TouchableHighlight
+
+          {/* <TouchableHighlight
             style={localStyles.buttons}
             onPress={this._getExperienceButtonOnPress(VR_NAVIGATOR_TYPE)}
             underlayColor={'#68a0ff'}
@@ -113,7 +118,7 @@ export default class ViroSample extends Component {
     return (
       <ViroVRSceneNavigator
         {...this.state.sharedProps}
-        initialScene={{ scene: InitialVRScene }}
+        initialScene={{ scene: InitialVRScreen }}
         onExitViro={this._exitViro}
       />
     );

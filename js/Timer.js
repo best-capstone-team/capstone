@@ -7,7 +7,7 @@ const Timer = () => (
     <TimerCountdown
       initialMilliseconds={1000 * 10}
       onTick={milliseconds => console.log('tick', milliseconds)}
-      onExpire={() => console.log('complete')}
+      onExpire={() => alert('complete')}
       formatMilliseconds={milliseconds => {
         const remainingSec = Math.round(milliseconds / 1000);
         const seconds = parseInt((remainingSec % 60).toString(), 10);
